@@ -10,7 +10,7 @@ function component() {
   // Lodash, now imported by this script
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
   element.classList.add('hello');
-  const myImg = new Image();
+  const myImg = new Image(30, 30);
   myImg.src = img;
   element.appendChild(myImg);
 

@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Dusizhong">
+    <link rel="icon" href="favicon.ico">
+    <title>book-detail</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  
+    <a id="skippy" class="sr-only sr-only-focusable text-center" href="#content">
+  <div class="container">
+    <span class="skiplink-text">Skip to main content</span>
+  </div>
+</a>
+
+    
+
+  <header class="navbar navbar-static-top bs-docs-nav" id="top">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Bootstrap 中文文档</a>
+    </div>
+    <nav id="bs-navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="/getting-started/">入门</a>
+        </li>
+        <li>
+          <a href="/css/">全局 CSS 样式</a>
+        </li>
+        <li>
+          <a href="/components/">组件</a>
+        </li>
+        <li>
+          <a href="/javascript/">JavaScript 插件</a>
+        </li>
+        <li>
+          <a href="/customize/">定制</a>
+        </li>
+        <li><a class="reddot" href="https://www.youzhan.org" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'V3导航-网站实例'])" target="_blank">网站实例</a></li>
+        <li><a class="reddot" href="https://www.bootmb.com" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'V3导航-免费模板'])" target="_blank">免费模板</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            v3 <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="https://v5.bootcss.com/">v5</a></li>
+            <li><a href="https://v4.bootcss.com/">v4</a></li>
+            <li class="divider"></li>
+            <li class="active"><a href="https://v3.bootcss.com/">v3</a></li>
+            <li><a href="https://v2.bootcss.com/">v2</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="https://www.youzhan.org" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');">优站精选</a></li>
+        <li><a href="https://blog.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');">官方博客</a></li>
+        <li><a href="https://www.bootcss.com/">返回 Bootstrap 中文网</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="bs-docs-header" id="content" tabindex="-1">
+      <div class="container">
+        <h1>起步</h1>
+        <p>简要介绍 Bootstrap，以及如何下载、使用，还有基本模版和案例等。</p>
+        
+      </div>
+    </div>
+
+    <div class="container bs-docs-container">
+
+      <div class="row">
+        <div class="col-md-9" role="main">
+
+          <div class="bs-docs-section">
+  <h1 id="download" class="page-header">下载</h1>
+
+  <p class="lead">Bootstrap （当前版本 v3.4.1）提供以下几种方式帮你快速上手，每一种方式针对具有不同技能等级的开发者和不同的使用场景。继续阅读下面的内容，看看哪种方式适合你的需求吧。</p>
+
+
+  <h2 id="download-bower">通过 Bower 进行安装</h2>
+  <p>还可以通过 <a href="https://bower.io/">Bower</a> 安装并管理 Bootstrap 的 Less、CSS、JavaScript 和字体文件。</p>
+  <figure class="highlight"><pre><code class="language-bash" data-lang="bash">bower <span class="nb">install </span>bootstrap</code></pre></figure>
+
+</div>
+
+<div class="bs-docs-section">
+  <h1 id="whats-included" class="page-header">包含的内容</h1>
+
+  <p class="lead">Bootstrap 提供了两种形式的压缩包，在下载下来的压缩包内可以看到以下目录和文件，这些文件按照类别放到了不同的目录内，并且提供了压缩与未压缩两种版本。</p>
+
+  <div class="bs-callout bs-callout-warning" id="jquery-required">
+    <h4>Bootstrap 插件全部依赖 jQuery</h4>
+    <p>请注意，<strong>Bootstrap 的所有 JavaScript 插件都依赖 jQuery，</strong>因此 jQuery 必须在 Bootstrap 之前引入，就像在<a href="#template">基本模版</a>中所展示的一样。在<a href="https://github.com/twbs/bootstrap/blob/v3-dev/bower.json"> <code>bower.json</code> 文件中</a> 列出了 Bootstrap 所支持的 jQuery 版本。</p>
+  </div>
+
+  <h2 id="whats-included-precompiled">预编译版</h2>
+  <p>下载压缩包之后，将其解压缩到任意目录即可看到以下（压缩版的）目录结构：</p>
+<!-- NOTE: This info is intentionally duplicated in the README.
+Copy any changes made here over to the README too. -->
+<figure class="highlight"><pre><code class="language-text" data-lang="text">bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.css.map
+│   ├── bootstrap.min.css
+│   ├── bootstrap.min.css.map
+│   ├── bootstrap-theme.css
+│   ├── bootstrap-theme.css.map
+│   ├── bootstrap-theme.min.css
+│   └── bootstrap-theme.min.css.map
+├── js/
+│   ├── bootstrap.js
+│   └── bootstrap.min.js
+└── fonts/
+    ├── glyphicons-halflings-regular.eot
+    ├── glyphicons-halflings-regular.svg
+    ├── glyphicons-halflings-regular.ttf
+    ├── glyphicons-halflings-regular.woff
+    └── glyphicons-halflings-regular.woff2</code></pre></figure>
+<!-- NOTE: This info is intentionally duplicated in the README.
+Copy any changes made here over to the README too. -->
+  <p>上面展示的就是 Bootstrap 的基本文件结构：预编译文件可以直接使用到任何 web 项目中。我们提供了编译好的 CSS 和 JS (<code>bootstrap.*</code>) 文件，还有经过压缩的 CSS 和 JS (<code>bootstrap.min.*</code>) 文件。同时还提供了 CSS <a href="https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps">源码映射表</a> (<code>bootstrap.*.map</code>) ，可以在某些浏览器的开发工具中使用。同时还包含了来自 Glyphicons 的图标字体，在附带的 Bootstrap 主题中使用到了这些图标。</p>
+
+  <h2 id="whats-included-source">Bootstrap 源码</h2>
+  <p>Bootstrap 源码包含了预先编译的 CSS、JavaScript 和图标字体文件，并且还有 LESS、JavaScript 和文档的源码。具体来说，主要文件组织结构如下：</p>
+<figure class="highlight"><pre><code class="language-text" data-lang="text">bootstrap/
+├── less/
+├── js/
+├── fonts/
+├── dist/
+│   ├── css/
+│   ├── js/
+│   └── fonts/
+└── docs/
+    └── examples/</code></pre></figure>
+  <p><code>less/</code>、<code>js/</code> 和 <code>fonts/</code> 目录分别包含了 CSS、JS 和字体图标的源码。<code>dist/</code> 目录包含了上面所说的预编译 Bootstrap 包内的所有文件。<code>docs/</code> 包含了所有文档的源码文件，<code>examples/</code> 目录是 Bootstrap 官方提供的实例工程。除了这些，其他文件还包含 Bootstrap 安装包的定义文件、许可证文件和编译脚本等。</p>
+</div>
+
+<div class="bs-docs-section">
+  <h1 id="grunt" class="page-header">编译 CSS 和 JavaScript 文件</h1>
+
+  <p class="lead">Bootstrap 使用 <a href="https://gruntjs.com/">Grunt</a> 搭建编译系统，并且对外提供了一些方便的方法用于编译整个框架。下面讲解的就是如何编译源码、运行测试用例等内容。</p>
+
+  <h2 id="grunt-installing">安装 Grunt</h2>
+  <p>安装 Grunt 前，你需要<strong>首先<a href="https://nodejs.org/download/">下载并安装 node.js</a></strong> （npm 已经包含在内）。npm 是 <a href="https://www.npmjs.com/">node packaged modules</a> 的简称，它的作用是基于 node.js 管理扩展包之间的依赖关系。</p>
+
+  然后在命令行中输入以下命令：
+  <ol>
+    <li>在全局环境中安装 <code>grunt-cli</code> ：<code>npm install -g grunt-cli</code> 。</li>
+    <li>进入 <code>/bootstrap/</code> 根目录，然后执行 <code>npm install</code> 命令。npm 将读取 <a href="https://github.com/twbs/bootstrap/blob/v3-dev/package.json"><code>package.json</code></a> 文件并自动安装此文件中列出的所有被依赖的扩展包。</li>
+  </ol>
+
+  <p>上述步骤完成后，你就可以运行 Bootstrap 所提供的各个 Grunt 命令了。</p>
+
+  <h2 id="grunt-commands">可用的 Grunt 命令</h2>
+  <h3><code>grunt dist</code> （仅编译 CSS 和 JavaScript 文件）</h3>
+  <p>重新生成 <code>/dist/</code> 目录，并将编译压缩后的 CSS 和 JavaScript 文件放入这个目录中。作为一名 Bootstrap 用户，大部分情况下你只需要执行这一个命令。</p>
+
+  <h3><code>grunt watch</code> （监测文件的改变，并运行指定的 Grunt 任务）</h3>
+  <p>监测 Less 源码文件的改变，并自动重新将其编译为 CSS 文件。</p>
+
+  <h3><code>grunt test</code> （运行测试用例）</h3>
+  <p>在真实的浏览器中运行 <a href="https://jshint.com/">JSHint</a> 和 <a href="https://qunitjs.com/">QUnit</a> 的测试用例，这要归功于 <a href="https://karma-runner.github.io/2.0/index.html">Karma</a>。</p>
+
+  <h3><code>grunt docs</code> （编译并测试文档中的资源文件）</h3>
+  <p>编译并测试 CSS、JavaScript 和其他资源文件。在本地环境下通过 <code>bundle exec jekyll serve</code> 运行 Bootstrap 文档时需要用到这些资源文件。</p>
+
+  <h3><code>grunt</code> （重新构建所有内容并运行测试用例）</h3>
+  <p>编译并压缩 CSS 和 JavaScript 文件、构建文档站点、对文档做 HTML5 校验、重新生成定制工具所需的资源文件等，都需要 <a href="https://jekyllrb.com/docs/installation/">Jekyll</a> 工具。这些只有在你对 Bootstrap 深度研究时才有用。</p>
+
+  <h2 id="grunt-troubleshooting">除错</h2>
+  <p>如果你在安装依赖包或者运行 Grunt 命令时遇到了问题，请首先删除 npm 自动生成的 <code>/node_modules/</code> 目录，然后，再次运行 <code>npm install</code> 命令。</p>
+</div>
+
+
+
+
+
+        </div>
+        
+        <div class="col-md-3" role="complementary">
+          <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+            
+
+            <ul class="nav bs-docs-sidenav">
+              
+                <li>
+  <a href="#download">下载</a>
+</li>
+<li>
+  <a href="#whats-included">包含的内容</a>
+  <ul class="nav">
+    <li><a href="#whats-included-precompiled">预编译版</a></li>
+    <li><a href="#whats-included-source">Bootstrap 源码</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#grunt">编译 CSS 和 JavaScript 文件</a>
+  <ul class="nav">
+    <li><a href="#grunt-installing">安装 Grunt</a></li>
+    <li><a href="#grunt-commands">可以使用的 Grunt 命令</a></li>
+    <li><a href="#grunt-troubleshooting">除错</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#template">基本模板</a>
+</li>
+
+              
+            </ul>
+            <a class="back-to-top" href="#top">
+              返回顶部
+            </a>
+            
+          </nav>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Footer
+================================================== -->
+<footer class="bs-docs-footer">
+  <div class="container">
+    <ul class="bs-docs-footer-links">
+      <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
+      <li><a href="https://twitter.com/getbootstrap">Twitter</a></li>
+      <li><a href="/getting-started/#examples">实例</a></li>
+      <li><a href="/about/">关于</a></li>
+    </ul>
+
+    <p>Designed and built with all the love in the world by <a href="https://twitter.com/mdo" rel="noopener" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" rel="noopener" target="_blank">@fat</a>. Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+
+    <p>Code licensed <a href="https://github.com/twbs/bootstrap/blob/v3-dev/LICENSE" rel="license noopener" target="_blank">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" rel="license noopener" target="_blank">CC BY 3.0</a>.</p>
+
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+
+
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/docs.js"></script>
+
+  </body>
+</html>
